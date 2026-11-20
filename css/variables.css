@@ -1,0 +1,87 @@
+/**
+ * variables.css - Dual Theme Variables (Dark & Light Mode)
+ * Default: Dark Navy & Deep Black with Electric Blue & Cyan Accents.
+ * Light Theme: Clean Crisp Slate, Pearl Navy & Electric Cobalt.
+ */
+
+:root {
+  /* DARK THEME (DEFAULT) */
+  --bg-darkest: #040711;         /* Deep obsidian black */
+  --bg-primary: #070d1e;         /* Deep rich dark navy */
+  --bg-secondary: #0c152e;       /* Card and surface navy */
+  --bg-surface: #101c3d;         /* Elevated surface */
+  --bg-card-hover: #14234b;      /* Interactive hover */
+  --bg-glass: rgba(12, 21, 46, 0.82); /* Glassmorphism backdrop */
+  --bg-glass-card: rgba(14, 25, 54, 0.68);
+  --bg-terminal: #050a18;
+
+  /* Electric Accents */
+  --cyan-primary: #00d2ff;       /* Refined electric cyan */
+  --cyan-subtle: rgba(0, 210, 255, 0.08);
+  --cyan-border: rgba(0, 210, 255, 0.22);
+  --blue-accent: #1e6fff;        /* Crisp cobalt blue */
+  --blue-subtle: rgba(30, 111, 255, 0.12);
+  --green-status: #10b981;       /* Terminal status green */
+  --amber-study: #f59e0b;        /* In-progress status */
+
+  /* Text Colors */
+  --text-main: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-dim: #475569;
+
+  /* Borders & Shadows */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(0, 210, 255, 0.18);
+  --glass-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.65);
+  --glow-subtle: 0 0 16px rgba(0, 210, 255, 0.2);
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+
+  /* Sizing & Transitions */
+  --container-max: 1200px;
+  --nav-height: 76px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   LIGHT THEME OVERRIDES ([data-theme="light"])
+   ========================================================================== */
+[data-theme="light"] {
+  --bg-darkest: #f1f5f9;         /* Light slate canvas */
+  --bg-primary: #f8fafc;         /* Crisp white/pearl */
+  --bg-secondary: #ffffff;       /* Pure white cards */
+  --bg-surface: #e2e8f0;         /* Slate elevated surfaces */
+  --bg-card-hover: #f1f5f9;
+  --bg-glass: rgba(248, 250, 252, 0.88);
+  --bg-glass-card: rgba(255, 255, 255, 0.82);
+  --bg-terminal: #0f172a;        /* Keeps contrast for terminal chips */
+
+  --cyan-primary: #0284c7;       /* Rich high-contrast ocean cyan/blue */
+  --cyan-subtle: rgba(2, 132, 199, 0.1);
+  --cyan-border: rgba(2, 132, 199, 0.28);
+  --blue-accent: #2563eb;
+  --blue-subtle: rgba(37, 99, 235, 0.1);
+  --green-status: #059669;
+  --amber-study: #d97706;
+
+  --text-main: #0f172a;          /* Deep navy text for contrast */
+  --text-secondary: #475569;     /* Medium slate */
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-light: rgba(15, 23, 42, 0.14);
+  --glass-border: rgba(2, 132, 199, 0.25);
+  --glass-shadow: 0 12px 30px -10px rgba(15, 23, 42, 0.12);
+  --glow-subtle: 0 0 12px rgba(2, 132, 199, 0.15);
+}
