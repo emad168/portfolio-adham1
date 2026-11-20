@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adham Sabry | Information Technology &amp; Computer Networks</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Modular Stylesheets (Relative Paths for GitHub Pages) -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/homepage.css">
+  <link rel="stylesheet" href="./css/projects.css">
+  <link rel="stylesheet" href="./css/interactions.css">
+</head>
+<body>
+
+  <!-- 1. Top Scroll Progress Indicator -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- Site Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#home" class="brand-logo" aria-label="Adham Sabry Homepage">
+        <div class="logo-badge">AS</div>
+        <div class="brand-text">Adham<span>.Sabry</span></div>
+      </a>
+
+      <!-- Desktop Nav Menu (Isolated from hidden admin route) -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+          <li><a href="#certifications" class="nav-link" data-i18n="nav.certifications">Certifications</a></li>
+          <li><a href="#journey" class="nav-link" data-i18n="nav.journey">Roadmap</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          <li><a href="./admin.html" class="nav-link" data-i18n="nav.admin">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Interactive Controls -->
+      <div class="nav-actions">
+        <!-- Language Switcher (EN / AR) -->
+        <button type="button" class="lang-toggle-btn" id="lang-toggle-btn" title="Toggle Language" aria-label="Toggle language">
+          <i class="fas fa-globe"></i> <span>AR</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+        </button>
+
+        <!-- Get In Touch CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span data-i18n="nav.getInTouch">Get in Touch</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Details -->
+          <div class="hero-content reveal-on-scroll">
+            <div class="hero-identity-tag">
+              <i class="fas fa-circle"></i>
+              <span data-i18n="hero.status">CURRENT FOCUS: CCNA &amp; NETWORK PROTOCOLS</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-name">
+              Hi, I'm <span class="highlight-name">Adham Sabry</span>
+            </h1>
+
+            <div class="hero-title-role" id="hero-title-role" data-i18n="hero.role">
+              Information Technology Student
+            </div>
+
+            <div class="hero-subtitle" id="hero-subtitle">
+              <i class="fas fa-network-wired"></i> <span data-i18n="hero.focus">Current Focus: Computer Networks &amp; CCNA</span>
+            </div>
+
+            <p class="hero-intro" id="hero-intro" data-i18n="hero.intro">
+              Dedicated Information Technology student at Delta Technological University, actively mastering computer networking fundamentals, Cisco CCNA concepts, and enterprise IT infrastructure. Building a structured technical foundation with the long-term career ambition of progressing into Penetration Testing and offensive security.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-project-diagram"></i> <span data-i18n="hero.btnProjects">View My Projects</span>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fas fa-envelope"></i> <span data-i18n="hero.btnContact">Contact Me</span>
+              </a>
+            </div>
+
+            <div class="hero-badges-row">
+              <div class="hero-badge-item">
+                <i class="fas fa-graduation-cap"></i> <span data-i18n="hero.badgeUniversity">Delta Technological University</span>
+              </div>
+              <div class="hero-badge-item">
+                <i class="fas fa-certificate"></i> <span data-i18n="hero.badgeCcna">Cisco CCNA (In Progress)</span>
+              </div>
+              <div class="hero-badge-item">
+                <i class="fas fa-shield-alt"></i> <span data-i18n="hero.badgeGoal">Goal: Penetration Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Portrait -->
+          <div class="hero-portrait-container reveal-on-scroll stagger-1">
+            <div class="portrait-frame-wrapper">
+              <div class="frame-corner corner-tl"></div>
+              <div class="frame-corner corner-tr"></div>
+              <div class="frame-corner corner-bl"></div>
+              <div class="frame-corner corner-br"></div>
+
+              <div class="portrait-inner-box">
+                <!-- Exact user portrait placed at assets/images/profile.jpg -->
+                <img id="hero-avatar" src="./assets/images/profile.jpg" alt="Portrait of Adham Sabry">
+              </div>
+
+              <div class="portrait-status-badge">
+                <div class="status-dot"></div>
+                <span id="hero-status-tag">Studying CCNA &amp; Networking Fundamentals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><i class="fas fa-user"></i> <span data-i18n="section.aboutTag">Professional Background</span></span>
+          <h2 class="section-title"><span data-i18n="section.aboutTitle">About</span> <span class="text-gradient">Me</span></h2>
+          <p class="section-desc" data-i18n="section.aboutDesc">A disciplined approach to understanding systems from the physical cable to the transport layer.</p>
+        </div>
+        <div id="about-content-area" class="reveal-on-scroll stagger-1"></div>
+      </div>
+    </section>
+
+    <!-- 3. CURRENT SKILLS SECTION -->
+    <section id="skills" style="background: rgba(8, 14, 32, 0.45);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><i class="fas fa-laptop-code"></i> <span data-i18n="section.skillsTag">Technical Stack</span></span>
+          <h2 class="section-title"><span data-i18n="section.skillsTitle">Current</span> <span class="text-gradient" data-i18n="section.skillsTitleAccent">Skills</span></h2>
+          <p class="section-desc" data-i18n="section.skillsDesc">Transparently categorizing verified proficiencies and active study areas without exaggerated claims.</p>
+        </div>
+        <div id="skills-content-area" class="reveal-on-scroll stagger-1"></div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION (Scalable Projects Management System) -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><i class="fas fa-folder-open"></i> <span data-i18n="section.projectsTag">Portfolio Showcase</span></span>
+          <h2 class="section-title"><span data-i18n="section.projectsTitle">Featured</span> <span class="text-gradient" data-i18n="section.projectsTitleAccent">Projects</span></h2>
+          <p class="section-desc" data-i18n="section.projectsDesc">Browse through academic projects, practical simulations, and software development exercises. Filter by category below.</p>
+        </div>
+
+        <!-- Dynamic Category Filter Bar -->
+        <div class="projects-filter-wrapper reveal-on-scroll" id="projects-filter-bar"></div>
+
+        <!-- Dynamic Projects Grid / Empty State Area -->
+        <div id="projects-content-area" class="reveal-on-scroll stagger-1"></div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION & CERTIFICATIONS SECTION -->
+    <section id="education" style="background: rgba(8, 14, 32, 0.45);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><i class="fas fa-graduation-cap"></i> <span data-i18n="section.eduTag">Qualifications</span></span>
+          <h2 class="section-title"><span data-i18n="section.eduTitle">Education &amp;</span> <span class="text-gradient" data-i18n="section.eduTitleAccent">Certifications</span></h2>
+          <p class="section-desc" data-i18n="section.eduDesc">Academic degree accomplishments combined with formal vendor certifications and active courses.</p>
+        </div>
+        <!-- Anchor for Certifications Navigation -->
+        <div id="certifications"></div>
+        <div id="education-certs-content-area"></div>
+      </div>
+    </section>
+
+    <!-- 6. 6-STAGE LEARNING JOURNEY ROADMAP -->
+    <section id="journey">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><i class="fas fa-route"></i> <span data-i18n="section.journeyTag">Career Roadmap</span></span>
+          <h2 class="section-title"><span data-i18n="section.journeyTitle">Learning</span> <span class="text-gradient" data-i18n="section.journeyTitleAccent">Journey</span></h2>
+          <p class="section-desc" data-i18n="section.journeyDesc">The progressive path from IT fundamentals to penetration testing and offensive cybersecurity.</p>
+        </div>
+        <div id="journey-content-area" class="reveal-on-scroll stagger-1"></div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" style="background: rgba(8, 14, 32, 0.45);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag"><i class="fas fa-envelope-open-text"></i> <span data-i18n="section.contactTag">Communication</span></span>
+          <h2 class="section-title"><span data-i18n="section.contactTitle">Contact</span> <span class="text-gradient" data-i18n="section.contactTitleAccent">Me</span></h2>
+          <p class="section-desc" data-i18n="section.contactDesc">Have a technical inquiry, networking discussion, or internship opportunity? Reach out directly.</p>
+        </div>
+        <div id="contact-content-area" class="reveal-on-scroll stagger-1"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <div class="logo-badge">AS</div>
+            <div class="brand-text">Adham<span>.Sabry</span></div>
+          </a>
+          <p>
+            Information Technology Student specializing in computer networking fundamentals, CCNA preparation, and building a disciplined foundation for pentration testing and offensive
+             security.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 1rem; font-family: var(--font-mono);">NAVIGATION</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 1rem; font-family: var(--font-mono);">QUALIFICATIONS</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#journey">Roadmap</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 1rem; font-family: var(--font-mono);">DIRECT CHANNELS</h4>
+          <ul class="footer-nav-list">
+            <li><a href="mailto:almasryadham601@gmail.com"><i class="fas fa-envelope"></i> Email Direct</a></li>
+            <li><a href="https://wa.me/2001097606276" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp Direct</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="current-year">2026</span> Adham Sabry. <span data-i18n="footer.rights">All rights reserved.</span></div>
+        <div>Delta Technological University &bull; Egypt</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 2. Back to Top Interactive Floating Button -->
+  <button type="button" class="back-to-top-btn" id="back-to-top-btn" title="Back to top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Modular JavaScript Data Files (Edit directly in js/data/) -->
+  <script src="./js/data/profile.js"></script>
+  <script src="./js/data/skills.js"></script>
+  <script src="./js/data/projects.js"></script>
+  <script src="./js/data/education.js"></script>
+  <script src="./js/data/certifications.js"></script>
+  <script src="./js/data/journey.js"></script>
+
+  <!-- Security Sanitizer & Storage Engine -->
+  <script src="./js/sanitize.js"></script>
+  <script src="./js/storage.js"></script>
+
+  <!-- Internationalization (English / Arabic) -->
+  <script src="./js/i18n.js"></script>
+
+  <!-- Interactive Features (Theme, Scroll Progress, Back to Top, Reveal, Copy) -->
+  <script src="./js/interactions.js"></script>
+
+  <!-- Projects Management Engine -->
+  <script src="./js/projects-manager.js"></script>
+
+  <!-- Rendering Engine & Controller -->
+  <script src="./js/render.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+</html>
